@@ -30,9 +30,9 @@ class bank_account:
                 
             
 mybank = bank_account("mani",1000)
-print(mybank.bb_check())     
-print(mybank.deposit(7879890))
-print(mybank.withdraw(15287632196))
-print(mybank.bb_check())
+mybank.bb_check()    
+mybank.deposit(7879890)
+mybank.withdraw(15287632196)
+mybank.bb_check()
       
                                  
