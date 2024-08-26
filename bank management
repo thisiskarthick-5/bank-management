@@ -1,38 +1,39 @@
 
-#created bank class
-class bank_account:
-    def __init__(self,owner,balance): #structure
-        self.owner = owner
-        self.balance = balance
-        
-    def bb_check(self): #for check
-        print(f"{self.owner},your current bank balance is : {self.balance}")
-        
-    def deposit(self,amount): #for deposit
-        if amount > 0:
-            self.balance += amount
-            print(f" Deposited {amount} , new balance :{self.balance}")
-        else:
-            print("Amount must be positive ") 
-    
-    def withdraw(self,amount): #for withdraw
-        
-            
-        if amount > self.balance:
-            print(f"insufficient fund ! available balance {self.balance}")
-            
-        elif amount > 0:
-            self.balance -= amount
-            print(f"Withdraw amount {amount} , new balance : {self.balance}")     
-            
-        else:
-            print("fund must be positive")
+ #created bank class
+
+        class bank_account:
+            def __init__(self,owner,balance): #structure
+                self.owner = owner
+                self.balance = balance
                 
+            def bb_check(self): #for check
+                print(f"{self.owner},your current bank balance is : {self.balance}")
+                
+            def deposit(self,amount): #for deposit
+                if amount > 0:
+                    self.balance += amount
+                    print(f" Deposited {amount} , new balance :{self.balance}")
+                else:
+                    print("Amount must be positive ") 
             
-mybank = bank_account("mani",1000)
-mybank.bb_check()    
-mybank.deposit(7879890)
-mybank.withdraw(15287632196)
-mybank.bb_check()
-      
-                                 
+            def withdraw(self,amount): #for withdraw
+                
+                    
+                if amount > self.balance:
+                    print(f"insufficient fund ! available balance {self.balance}")
+                    
+                elif amount > 0:
+                    self.balance -= amount
+                    print(f"Withdraw amount {amount} , new balance : {self.balance}")     
+                    
+                else:
+                    print("fund must be positive")
+                        
+                    
+        mybank = bank_account("mani",1000)
+        mybank.bb_check()    
+        mybank.deposit(7879890)
+        mybank.withdraw(15287632196)
+        mybank.bb_check()
+          
+                                     
